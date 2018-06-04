@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.core.dao.BaseDictDao">
+      <!-- 根据类别代码查询 -->
+     <select id="selectBaseDicByTypeCode" parameterType="String" resultType="baseDict">
+      <!-- 这里写baseDict是因为在config中的mybatis-config中写了别名  -->
+          select * from base_dict where dict_type_code=#{typecode}
+     </select>
+</mapper>

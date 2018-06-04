@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 别名定义 -->
+	<typeAliases>
+	    <!-- 采用了直接自动扫描包的形式，这是在别名过多的情况下使用，mybatis会将所有的com.core.po包
+	    中的pojo类以首字母小写的非限定类名作为它的别名。 -->
+		<package name="com.core.po" />
+	</typeAliases>
+</configuration>
