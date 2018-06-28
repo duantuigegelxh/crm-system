@@ -55,7 +55,8 @@ public class CustomerController {
 			String custIndustry, String custLevel,Model model){
 		//改变get方法的编码，使其不产生乱码，//ISO8859-1显示数据以一个字节一个字节显示，而utf-8以几个字节一起表示
 		String custName1=custName;
-		/*byte[] bs;
+		//将get方式的字符串的编码从iso8859-1变成utf-8的格式，这个利用了String的构造函数
+		byte[] bs;
 		if (custName != null) {
 			try {
 				bs = custName.getBytes("ISO8859-1");
@@ -64,7 +65,7 @@ public class CustomerController {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}*/
+		}
 		
 		//根据条件查询所有的客户
 		Page<Customer> customers=customerService.findCustomerList(page, rows, custName1, custSource, custIndustry, custLevel);

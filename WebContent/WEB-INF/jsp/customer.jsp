@@ -235,7 +235,7 @@
 					<div class="form-group">
 						<label for="customerName">客户名称</label> 
 						<input type="text" class="form-control" id="customerName" 
-						                   value="${custName }" name="custName" />
+						                   value="${custName }" name="custName" /> 
 					</div>
 					<div class="form-group">
 						<label for="customerFrom">客户来源</label> 
